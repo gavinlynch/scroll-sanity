@@ -8,19 +8,23 @@
 
 /* Begin PBXBuildFile section */
 		1C75C0C220872A79000668B1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C75C0C120872A79000668B1 /* AppDelegate.swift */; };
-		1C75C0C420872A79000668B1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C75C0C320872A79000668B1 /* ViewController.swift */; };
 		1C75C0C620872A7A000668B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1C75C0C520872A7A000668B1 /* Assets.xcassets */; };
 		1C75C0C920872A7A000668B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1C75C0C720872A7A000668B1 /* Main.storyboard */; };
+		1C75C0D220872DC8000668B1 /* PreferencesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C75C0D120872DC8000668B1 /* PreferencesViewController.swift */; };
+		1C882A09208AD48100725FE7 /* ClickMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C882A08208AD48100725FE7 /* ClickMonitor.swift */; };
+		1C882A0B208AD7F000725FE7 /* ScrollMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C882A0A208AD7F000725FE7 /* ScrollMonitor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		1C75C0BE20872A79000668B1 /* scroll-sanity.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "scroll-sanity.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1C75C0C120872A79000668B1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		1C75C0C320872A79000668B1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		1C75C0C520872A7A000668B1 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1C75C0C820872A7A000668B1 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1C75C0CA20872A7A000668B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C75C0CB20872A7A000668B1 /* scroll_sanity.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = scroll_sanity.entitlements; sourceTree = "<group>"; };
+		1C75C0D120872DC8000668B1 /* PreferencesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreferencesViewController.swift; sourceTree = "<group>"; };
+		1C882A08208AD48100725FE7 /* ClickMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClickMonitor.swift; sourceTree = "<group>"; };
+		1C882A0A208AD7F000725FE7 /* ScrollMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollMonitor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,8 +57,10 @@
 		1C75C0C020872A79000668B1 /* scroll-sanity */ = {
 			isa = PBXGroup;
 			children = (
+				1C882A08208AD48100725FE7 /* ClickMonitor.swift */,
 				1C75C0C120872A79000668B1 /* AppDelegate.swift */,
-				1C75C0C320872A79000668B1 /* ViewController.swift */,
+				1C882A0A208AD7F000725FE7 /* ScrollMonitor.swift */,
+				1C75C0D120872DC8000668B1 /* PreferencesViewController.swift */,
 				1C75C0C520872A7A000668B1 /* Assets.xcassets */,
 				1C75C0C720872A7A000668B1 /* Main.storyboard */,
 				1C75C0CA20872A7A000668B1 /* Info.plist */,
@@ -95,6 +101,14 @@
 				TargetAttributes = {
 					1C75C0BD20872A79000668B1 = {
 						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.ApplicationGroups.Mac = {
+								enabled = 1;
+							};
+							com.apple.Sandbox = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -133,8 +147,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1C75C0C420872A79000668B1 /* ViewController.swift in Sources */,
 				1C75C0C220872A79000668B1 /* AppDelegate.swift in Sources */,
+				1C882A0B208AD7F000725FE7 /* ScrollMonitor.swift in Sources */,
+				1C75C0D220872DC8000668B1 /* PreferencesViewController.swift in Sources */,
+				1C882A09208AD48100725FE7 /* ClickMonitor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
